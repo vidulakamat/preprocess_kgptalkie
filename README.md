@@ -6,7 +6,7 @@ This python package is prepared by YourName.
 
 Install
 
-`pip install git+ssh://git@github.com/kgptalkie/preprocess_kgptalkie.git`
+`pip install git+https://github.com/laxmimerit/preprocess_kgptalkie.git`
 
 Uninstall
 
