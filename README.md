@@ -16,6 +16,20 @@ Uninstall
 You have to have installed spacy and python3 to make it work.
 
 ```
+def get_clean(x):
+    x = str(x).lower()
+    x =  ps.cont_exp(x)
+    x =  ps.remove_special_chars(x)
+    x = ps.remove_accented_chars(x)
+    x = ps.remove_emails(x)
+    x = ps.remove_html_tags(x)
+    x = ps.spelling_correction(x).raw_sentences[0]
+    x = ps.make_base(x)
+    return x
+```
+
+Use this if you want to use one by one
+```
 import pandas as pd
 import numpy as np
 import preprocess_kgptalkie as ps
