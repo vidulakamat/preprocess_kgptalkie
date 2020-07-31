@@ -16,6 +16,10 @@ Uninstall
 You have to have installed spacy and python3 to make it work.
 
 ```
+import pandas as pd
+import numpy as np
+import preprocess_kgptalkie as ps
+
 df = pd.read_csv('imdb_reviews.txt', sep = '\t', header = None)
 df.columns = ['reviews', 'sentiment']
 
