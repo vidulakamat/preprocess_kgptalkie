@@ -50,3 +50,14 @@ df['reviews'] = df['reviews'].apply(lambda x: ps.spelling_correction(x).raw_sent
 ```
 
 Note: Avoid to use `make_base` and `spelling_correction` for very large dataset otherwise it might take hours to process.
+
+
+#### Extra
+
+```
+x = 'lllooooovvveeee youuuu'
+x = re.sub("(.)\\1{2,}", "\\1", x)
+print(x)
+---
+love you
+```
